@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { FlashcardService } from '../services/flashcard.service';
 import { Flashcard } from '../models/flashcard';
 
 @Component({
   selector: 'app-progress',
   templateUrl: './progress.component.html',
+  imports: [RouterLink]
 })
 export class ProgressComponent {
   flashcards: Flashcard[] = [];

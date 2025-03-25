@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { FlashcardService } from '../services/flashcard.service';
 import { Flashcard } from '../models/flashcard';
 import { FlashcardComponent } from "../flashcard/flashcard.component";
@@ -7,7 +8,7 @@ import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-card-list',
   templateUrl: './card-list.component.html',
-  imports: [FlashcardComponent, NgFor],
+  imports: [FlashcardComponent, NgFor, RouterLink],
   styleUrls: ['./card-list.component.scss']
 })
 export class CardListComponent implements OnInit {
