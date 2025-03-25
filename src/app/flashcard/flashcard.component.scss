@@ -1,0 +1,82 @@
+.card-parent {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 300px;
+}
+
+.card {
+    height: 150px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 1.55em;
+    background-color: #e7c9a9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    margin: 0.25em auto;
+    transition: background-color 150ms linear;
+    transition: transform 200ms ease;
+    &.start-flip {
+      animation: startflip 350ms;
+      .button-container {
+        visibility: hidden;
+      }
+    }
+    &.end-flip {
+      animation: endflip 350ms;
+    }
+    &.flipped {
+      background-color: #f1b29f;
+    }
+    &:hover {
+      transform: translateY(-4px); 
+    }
+  }
+
+  .learned {
+    background-color: #d4edda;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    margin: 8px;
+    background-color: #9fcdf1;
+    color: white;
+    border: 1px solid #249fe6;
+    padding: 8px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1971a4;
+  }
+
+  @keyframes startflip {
+    0% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+    100% {
+      background-color: #cba175;
+      transform: rotate3d(0, 1, 0, 90deg);
+    }
+  }
+
+  @keyframes endflip {
+    0% {
+      background-color: #cba175;
+      transform: rotate3d(0, 1, 0, 90deg);
+    }
+    100% {
+      transform: rotate3d(0, 1, 0, 0deg);
+    }
+  }

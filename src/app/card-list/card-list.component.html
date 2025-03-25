@@ -1,0 +1,7 @@
+<div class="cards-container">
+  <div *ngFor="let card of flashcards">
+      <app-flashcard [card]="card" (learn)="markAsLearned(card.id)"></app-flashcard>
+  </div>
+</div>
+<a routerLink="/progress">View Progress</a>
+  

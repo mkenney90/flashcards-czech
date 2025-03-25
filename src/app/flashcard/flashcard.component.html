@@ -1,0 +1,11 @@
+<div class="card-parent">
+    <div class="card" 
+    [ngClass]="{' start-flip': this.status == 'start', ' end-flip': this.status == 'end', ' flipped': this.showTranslation}" 
+    (animationend)="onAnimEnd()">
+        <p>{{ showTranslation ? card.translation : card.phrase }}</p>
+        <div class="button-container">
+            <button (click)="cardClick()">turn over</button>
+            <!-- <button *ngIf="!card.learned" (click)="learn.emit(card.id)">Mark as Learned</button> -->
+        </div>
+    </div>
+</div>
