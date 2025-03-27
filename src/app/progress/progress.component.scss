@@ -1,0 +1,24 @@
+.button-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    margin: 8px;
+    background-color: #ff7952;
+    color: white;
+    border: 1px solid #e75227;
+    padding: 6px 14px;
+    border-radius: 2px;
+    cursor: pointer; 
+  } 
+
+  a {
+    margin: 8px;
+    background-color: #2e8b57;
+    color: white;
+    border: 1px solid #2c6846;
+    padding: 6px 14px;
+    border-radius: 2px;
+    cursor: pointer; 
+  }

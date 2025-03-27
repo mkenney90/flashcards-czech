@@ -1,2 +1,5 @@
 <p>Learned: {{ learnedCount }} / {{ flashcards.length }}</p>
-<a routerLink="/">Back to Cards</a> 
+<div class="button-container">
+    <a routerLink="/">Back</a> 
+    <button (click)="resetProgress()">Reset Progress</button> 
+</div>

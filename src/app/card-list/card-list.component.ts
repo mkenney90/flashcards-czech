@@ -24,4 +24,5 @@ export class CardListComponent implements OnInit {
     this.flashcardService.markAsLearned(id);
     this.flashcards = this.flashcardService.getFlashcards();
   }
+
 }
