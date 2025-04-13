@@ -2,7 +2,7 @@
     <div class="card" 
     [ngClass]="{' start-flip': this.status == 'start', ' end-flip': this.status == 'end', ' flipped': card.flipped}" 
     (animationend)="onAnimEnd()">
-        <p>{{ card.flipped ? card.translation : card.phrase }}</p>
+        <p>{{ card.flipped ? card.translation  : card.phrase }}</p>
         <p *ngIf="!card.flipped" class="pronounce-guide">{{ card.guide || "" }}</p>
         <div class="button-container">
             <button (click)="flipCard()">turn over</button>

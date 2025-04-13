@@ -6,14 +6,14 @@ import { Flashcard } from '../models/flashcard';
 })
 export class FlashcardService {
   private flashcards: Flashcard[] = [
-    { id: 1, phrase: 'Ano', guide: "ahh-no", translation: 'Yes', learned: false, flipped: false },
-    { id: 2, phrase: 'Ne', guide: "nay", translation: 'No', learned: false, flipped: false },
-    { id: 3, phrase: 'Dobrý den', guide: "doh-BREE den", translation: 'Good day', learned: false, flipped: false },
-    { id: 4, phrase: 'Děkuju (moc)', guide: "dyeh-koo-yoo (mots)", translation: 'Thank you (very much)', learned: false, flipped: false },
+    { id: 1, phrase: 'ano', guide: "ahh-no", translation: 'yes', learned: false, flipped: false },
+    { id: 2, phrase: 'ne', guide: "nay", translation: 'no', learned: false, flipped: false },
+    { id: 3, phrase: 'dobrý den', guide: "doh-BREE den", translation: 'good day', learned: false, flipped: false },
+    { id: 4, phrase: 'děkuju (moc)', guide: "dyeh-koo-yoo (mots)", translation: 'Thank you (very much)', learned: false, flipped: false },
     { id: 5, phrase: 'prosím', guide: "pro-seem", translation: 'You\'re welcome | Please', learned: false, flipped: false },
-    { id: 6, phrase: 'Na shledanou', translation: 'Goodbye', learned: false, flipped: false },
-    { id: 7, phrase: 'Ja jsem [name]', translation: 'I am [name]', learned: false, flipped: false },
-    { id: 8, phrase: 'Rád vás poznávám', translation: 'Nice to meet you', learned: false, flipped: false }
+    { id: 6, phrase: 'na shledanou', translation: 'Goodbye', learned: false, flipped: false },
+    { id: 7, phrase: 'ja jsem [name]', translation: 'I am [name]', learned: false, flipped: false },
+    { id: 8, phrase: 'rád vás poznávám', translation: 'Nice to meet you', learned: false, flipped: false }
   ]
 
   getFlashcards(): Flashcard[] {
